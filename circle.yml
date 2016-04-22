@@ -7,7 +7,7 @@ machine:
 
 test:
   override:
-    - mvn clean test -DsuiteXmlFile: testng.xml
+    - mvn clean test -q: {timeout: 2000}
 
   post:
     - mv --backup src/test/java/ $CIRCLE_ARTIFACTS
