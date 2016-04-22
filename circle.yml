@@ -12,4 +12,4 @@ test:
   post:
     - mv --backup src/test/java/ $CIRCLE_ARTIFACTS
     - mkdir -p $CIRCLE_TEST_REPORTS/junit/
-    - find . -type f -regex ".*/target/surefire-reports/.*html.*css.js" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
+    - find . -type f -regex ".*/target/surefire-reports/.*html.*css.js.txt" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
