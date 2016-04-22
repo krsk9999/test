@@ -3,7 +3,7 @@
 /bin/
 target/
 test-output/
-Screenshots/
+
 # OS Files #
 .DS_Store
 *.class
